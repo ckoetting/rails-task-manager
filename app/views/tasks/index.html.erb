@@ -1,7 +1,9 @@
 <h1>Your tasks:</h1>
+<%= link_to "Create a new task", tasks_new_path %>
 <%= @tasks.each do |task|%>
   <div>
   <h2><%= link_to task.title, task_path(task) %></h2>
+ <%= link_to "delete", task_path(task), method: :delete %>
   </div>
 <%end%>
 

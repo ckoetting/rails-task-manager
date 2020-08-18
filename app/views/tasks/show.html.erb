@@ -1,3 +1,11 @@
+<div class="container">
 <h2><%= @task.title %></h2>
-<p><%= @task.details %></p>
+<div class="detail">
+<h5><%= @task.details %></h5>
+</div>
 <p><%= @task.completed %></p>
+<a href="/tasks/<%= @task.id %>/edit">Edit this task</a>
+<p></p>
+<a href="/tasks/">Back to your tasks</a>
+<a href="">
+</div>
